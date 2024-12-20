@@ -48,14 +48,14 @@ struct Ping: AsyncParsableCommand {
 			print("pinging \(request.url!)")
 
 			do {
+				print("\(Date.now) Request \(i+1)")
 				let (_, response) = try await session.data(for: request)
 
 				guard let httpResponse = response as? HTTPURLResponse else {
 					throw URLError(.badServerResponse)
 				}
 
-				let now = Date.now
-				print("\(now) Request \(i+1): \(httpResponse.statusCode)")
+				print("\(Date.now) Response \(i+1): \(httpResponse.statusCode)")
 
 				if i < count - 1 {
 					let durationInSeconds = UInt64(pause + i * increment)
