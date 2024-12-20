@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C033BAF22D13A30C00335891 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = C033BAF12D13A30C00335891 /* ArgumentParser */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		C033BAE42D13A26E00335891 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C033BAF22D13A30C00335891 /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 			);
 			name = http3ping;
 			packageProductDependencies = (
+				C033BAF12D13A30C00335891 /* ArgumentParser */,
 			);
 			productName = http3ping;
 			productReference = C033BAE62D13A26E00335891 /* http3ping */;
@@ -106,6 +112,9 @@
 			);
 			mainGroup = C033BADD2D13A26E00335891;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C033BAF02D13A30C00335891 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C033BAE72D13A26E00335891 /* Products */;
 			projectDirPath = "";
@@ -289,6 +298,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C033BAF02D13A30C00335891 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C033BAF12D13A30C00335891 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C033BAF02D13A30C00335891 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C033BADE2D13A26E00335891 /* Project object */;
 }
